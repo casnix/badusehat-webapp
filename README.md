@@ -28,3 +28,22 @@ The order of webapp backends I will build are:
 After a Node.JS webapp is built and satisfactory, I will expand to an Apache Cordova app which will be in another
 Github repository: one for Android that can synchronize with my servers (for automation control and automating
 organization), another for Windows/Electron(?), and probably—eventually—a raspberry pi environment.
+
+# Source code organization
+
+In this repo are 4 top level directories:
+
+1) `/phpapp`
+2) `/railsapp`
+3) `/nodejsexpressapp`
+4) `/htdocs`
+
+The source code for the application backend is maintained in the respective of the first three directories.
+The phpbuild HTML code for the front end is maintained in the `/htdocs` directory.
+
+In each of the four directories is another tree of directories, mirroring this order:
+
+1) `./appsrc`, the pre-phpbuild preprocessor source
+2) `./maps`, function maps for space efficiency
+3) `./targetsrc`, the post-phpbuild preprocessor source 
+4) `./buildout`, the built/finished source code depending on phpbuild arguments
