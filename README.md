@@ -13,4 +13,18 @@ task, and making the technologies I work on more secure and robust against the g
 The purpose of this webapp is to give me a way to control automation from offsite, and to discuss my techniques and how
 they work.
 
-The source for this webapp is licensed under GPLv3.0.
+The source for this webapp is licensed under GPLv3.0, and uses my phpbuild utility to control source code output
+and generation.  Using phpbuild will help control how the front end communicates with the backend depending on which
+language/framework I use.  See below.
+
+# Order of development
+
+The order of webapp backends I will build are:
+
+1) PHP backend with Apache
+2) Ruby on Rails backend with Apache
+3) Node.JS backend using Express with proxy and Apache
+
+After a Node.JS webapp is built and satisfactory, I will expand to an Apache Cordova app which will be in another
+Github repository: one for Android that can synchronize with my servers (for automation control and automating
+organization), another for Windows/Electron(?), and probably—eventually—a raspberry pi environment.
