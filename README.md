@@ -47,3 +47,4 @@ In each of the four directories is another tree of directories, mirroring this o
 2) `./maps`, function maps for space efficiency
 3) `./targetsrc`, the post-phpbuild preprocessor source 
 4) `./buildout`, the built/finished source code depending on phpbuild arguments
+5) `./configs`, the configuration files for phpbuild and target-architecture based preprocessing
